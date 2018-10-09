@@ -6,10 +6,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         String[] argsu={"/Users/suyue/ty_test/41/demo_test_output/","/Users/suyue/ty_test/42/demo_test_output/","/Users/suyue/ty_test/43/demo_test_output/",
-        "/Users/suyue/ty_test/45/demo_test_output/","/Users/suyue/ty_test/46/demo_test_output/","/Users/suyue/ty_test/out/t"};
+        "/Users/suyue/ty_test/45/demo_test_output/","/Users/suyue/ty_test/46/demo_test_output/","/Users/suyue/ty_test/out/t_"};
         for(int i = 0;i<6;i++){
             argsu[i] = argsu[i]+args[0];
         }
+
+        argsu[5]+=".txt";
 
         int l = argsu.length;
         if(l<2){
