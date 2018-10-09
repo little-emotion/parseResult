@@ -5,10 +5,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        String[] argsu={"/Users/suyue/ty_test/41/demo_test_output/","/Users/suyue/ty_test/42/demo_test_output/","/Users/suyue/ty_test/43/demo_test_output/",
-        "/Users/suyue/ty_test/45/demo_test_output/","/Users/suyue/ty_test/46/demo_test_output/","/Users/suyue/ty_test/out/t_"};
+        String dir = "/Users/suyue/ty_test/ty_test_consistency_1h";
+        String[] argsu={"/41/demo_test_output/","/42/demo_test_output/","/43/demo_test_output/",
+        "/45/demo_test_output/","/46/demo_test_output/","/out/t_"};
         for(int i = 0;i<6;i++){
-            argsu[i] = argsu[i]+args[0];
+            argsu[i] = dir+argsu[i]+args[0];
         }
 
         argsu[5]+=".txt";

@@ -56,7 +56,7 @@ public class MergeSort {
 
     public void write() throws IOException {
         String lineSeparator = System.getProperty("line.separator");
-        fileWriter.write("time, throughput");
+        fileWriter.write("Time, Throughput");
         fileWriter.write(lineSeparator);
         fileWriter.flush();
         while(hasNext()){
